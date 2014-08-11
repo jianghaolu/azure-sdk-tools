@@ -1610,4 +1610,7 @@ use and privacy statement at &lt;url&gt; and (c) agree to sharing my contact inf
   <data name="CredentialOrganizationIdMessage" xml:space="preserve">
     <value>-Credential parameter can only be used with Organization ID credentials. For more information, please refer to http://go.microsoft.com/fwlink/?linkid=331007&amp;clcid=0x409 for more information about the difference between an organizational account and a Microsoft account.</value>
   </data>
+  <data name="NoSubscriptionFound" xml:space="preserve">
+    <value>No subscription associated with this account is found. In order to use Microsoft Azure services, please log in with an account that has a subscription associated with it.</value>
+  </data>
 </root>

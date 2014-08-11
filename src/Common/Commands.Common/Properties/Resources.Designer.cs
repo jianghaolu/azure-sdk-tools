@@ -2360,6 +2360,15 @@ namespace Microsoft.WindowsAzure.Commands.Common.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No subscription associated with this account is found. In order to use Microsoft Azure services, please log in with an account that has a subscription associated with it..
+        /// </summary>
+        public static string NoSubscriptionFound {
+            get {
+                return ResourceManager.GetString("NoSubscriptionFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &apos;{0}&apos; must be a cache worker role. Verify that it has proper cache worker role configuration..
         /// </summary>
         public static string NotCacheWorkerRole {
