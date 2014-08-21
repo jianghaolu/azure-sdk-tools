@@ -12,11 +12,20 @@
 // limitations under the License.
 // ----------------------------------------------------------------------------------
 
-namespace Microsoft.WindowsAzure.Commands.Utilities.CloudService
+namespace Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Extensions.DSC
 {
-    public enum ComputeEmulatorMode
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using Microsoft.WindowsAzure.Commands.ServiceManagement.Properties;
+    using System.Globalization;
+
+
+    public class GetDscResourceException : UnauthorizedAccessException
     {
-        Express,
-        Full
+        public GetDscResourceException(string resourceName, Exception e) :
+            base(String.Format(CultureInfo.CurrentUICulture, Resources.PublishVMDscExtensionGetDscResourceFailed, resourceName), e) { }
     }
 }
