@@ -213,9 +213,13 @@ namespace Microsoft.WindowsAzure.Commands.Utilities.Common
 
         public TClient CreateClientFromResourceManagerEndpoint<TClient>() where TClient : ServiceClient<TClient>
         {
-            if (ResourceManagerEndpoint == null || string.IsNullOrEmpty(ActiveDirectoryUserId))
+            if (string.IsNullOrEmpty(ActiveDirectoryUserId))
             {
                 throw new ArgumentException(Resources.InvalidSubscriptionState);
+            }
+            else if (ResourceManagerEndpoint == null)
+            {
+                throw new ArgumentException(Resources.EnvironmentDoesNotSupportARM);
             }
             return CreateClientFromEndpoint<TClient>(ResourceManagerEndpoint);
         }

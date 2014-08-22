@@ -1537,4 +1537,7 @@ use and privacy statement at &lt;url&gt; and (c) agree to sharing my contact inf
   <data name="NoSubscriptionFound" xml:space="preserve">
     <value>This account was not authorized for any Azure subscriptions. Please log in with an account that is authorized for use with one or more Azure subscriptions.</value>
   </data>
+  <data name="EnvironmentDoesNotSupportARM" xml:space="preserve">
+    <value>Azure Resource Manager is not supported in your environment. To use Azure Resource Manager, please switch to other environments using the Set-AzureEnvironment cmdlet.</value>
+  </data>
 </root>
